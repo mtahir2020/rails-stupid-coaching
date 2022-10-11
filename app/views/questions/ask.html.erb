@@ -1,7 +1,11 @@
-<h1>Hello</h1>
+<h1 class="ms-4 mt-3">Stupid Coaching</h1>
 
-<form action="answer" data-turbo="false" method="get">
-  <label for="text">Type your question here</label>
-  <input type="text" name="submission" id="text" placeholder="Thing">
-  <input type="submit" value="Ask!">
+<p class="ms-4 fs-5">Ask your coach anything:</p>
+
+
+<form action="answer" class="form ms-4" data-turbo="false" method="get">
+  <div class="input-group input-group-lg">
+    <input type="text" class="form-control" name="submission" id="text">
+    <input type="submit" class="py-3 px-4 text-white fs-5 fw-bold bg-primary rounded-3" value="Ask!">
+  </div>
 </form>

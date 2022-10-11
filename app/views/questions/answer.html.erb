@@ -1,18 +1,30 @@
-<h1>Stupid Coaching</h1>
+<h1 class="ms-4 mb-5 mt-4 fs-1">Stupid Coaching</h1>
 
-<h2>You asked: <%= @question %></h2>
+<div class="ms-4 mb-4 border-start border-5">
+  <div class="ms-3">
+    <h2 class="fw-light"><%= @question %></h2>
+    <h2 class="fw-light fst-italic">- You </h2>
+  </div>
+</div>
 
-<div>
-  <p>
+<div class="ms-4 border-start border-5">
     <% if @question == "I am going to work" %>
-      <%= "Great!" %>
+      <div class="answer-box ps-3 yellow-bg">
+        <h2> <%= "Great!" %> </h2>
+        <h2 class="fw-light fst-italic">- Your coach </h2>
+      </div>
     <% elsif @question.include? '?' %>
-      <%= "Silly question, get dressed and go to work!" %>
+      <div class="answer-box ps-3 yellow-bg"">
+        <h2> <%= "Silly question, get dressed and go to work!" %> </h2>
+        <h2 class="fw-light fst-italic">- Your coach </h2>
+      </div>
     <% else %>
-      <%= "I don't care, get dressed and go to work!" %>
+      <div class="answer-box ps-3 yellow-bg"">
+        <h2> <%= "I don't care, get dressed and go to work!" %> </h2>
+        <h2 class="fw-light fst-italic">- Your coach </h2>
+      </div>
     <% end %>
-  </p>
 </div>
 
 <%# link_to "text we want", url_path %>
-<%= link_to "Ask another question", ask_path %>
+<h4 class="ms-4 mt-5"><%= link_to "Ask another question", ask_path %></h3>
