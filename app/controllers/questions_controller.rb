@@ -5,4 +5,5 @@ class QuestionsController < ApplicationController
   def answer
     @question = params[:submission]
   end
+  
 end
